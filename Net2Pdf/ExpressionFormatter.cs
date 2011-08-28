@@ -6,8 +6,10 @@ using System.Linq.Expressions;
 
 namespace Net2Pdf
 {
-    public class ExpressionFormatter<T> : IStringFormatter
+    internal class ExpressionFormatter<T> : IStringFormatter
     {
+        public Expression<Func<T, string>>[] Expressions { get; set; }
+
         private Expression<Func<T, string>>[] expressions;
 
         public ExpressionFormatter(params Expression<Func<T, string>>[] e)
@@ -21,8 +23,8 @@ namespace Net2Pdf
             {
                 if (obj.GetType() == typeof(T))
                 {
-                    var propName = GetPropertyName((Expression)expression);
-                    if (propertyName == propName)
+                    var propName = ExpressionParser.GetPropertyName((Expression)expression);
+                    if (propertyName == propName || propName == null)
                         return expression.Compile()((T)obj);
                 }
                 else if (propertyValue.GetType() == typeof(T))
@@ -30,43 +32,6 @@ namespace Net2Pdf
             }
 
             return null;
-        }
-
-        private static string GetPropertyName(Expression e)
-        {
-            if (e is LambdaExpression)
-                return GetPropertyName(((LambdaExpression)e).Body);
-            else if (e is BinaryExpression)
-            {
-                var be = (BinaryExpression)e;
-
-                string left = GetPropertyName(be.Left);
-                if (left != null)
-                    return left;
-                var right = GetPropertyName(be.Right);
-                if (right != null)
-                    return right;
-
-                return null;
-            }
-            else if (e is UnaryExpression)
-            {
-                return GetPropertyName((e as UnaryExpression).Operand);
-            }
-            else if (e is MemberExpression)
-            {
-                return (e as MemberExpression).Member.Name;
-            }
-            else if (e is MethodCallExpression)
-            {
-                var x = (e as MethodCallExpression);
-                if (x.Object is MemberExpression)
-                    return GetPropertyName(x.Object);
-                else
-                    return null;
-            }
-            else
-                throw new InvalidOperationException("Can't handle this type of operation");
         }
     }
 }

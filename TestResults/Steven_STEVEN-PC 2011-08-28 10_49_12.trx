@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="77da6c47-b10c-4835-8702-be4b9fa90686" name="Steven@STEVEN-PC 2011-08-28 10:49:12" runUser="Steven-PC\Steven" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="653f69b1-1c9a-4652-808a-ef66419d484c">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Steven_STEVEN-PC 2011-08-28 10_49_12">
+      <DeploymentItem filename="C:\Users\Steven\Documents\Visual Studio 2010\Projects\Net-to-PDF\Net2Pdf\bin\Debug\Net2Pdf.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-08-28T10:49:12.0191635-04:00" queuing="2011-08-28T10:49:12.7055647-04:00" start="2011-08-28T10:49:12.8615650-04:00" finish="2011-08-28T10:50:24.7464912-04:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="17" executed="7" passed="6" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="10" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="STEVEN-PC" outcome="Error" timestamp="2011-08-28T10:50:24.7464912-04:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Enum_Format_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="fc8cefbd-b5af-253c-59ea-56c0237fb2e4">
+      <Execution id="3c02563e-0ae6-4cd0-aa54-3e561ea77004" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Enum_Format_Test" />
+    </UnitTest>
+    <UnitTest name="DateTimeTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="bf94dae5-5c34-f8c0-9390-ddd198d415b6">
+      <Execution id="5b715c97-9d38-466b-afb7-485dd03da4e1" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DateTimeTest" />
+    </UnitTest>
+    <UnitTest name="ComplexListTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="6a9a4c5c-773c-e915-6c52-09dab4a5d77d">
+      <Execution id="f46e585c-ab4c-46f0-b1c6-c0c533b196a5" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ComplexListTest" />
+    </UnitTest>
+    <UnitTest name="Primitive_As_Root2_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="46d86b0f-f82b-3c1b-686e-88cbaca5be11">
+      <Execution id="e97b0fb6-3a8d-4b80-a458-a4aea4ecf708" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Primitive_As_Root2_Test" />
+    </UnitTest>
+    <UnitTest name="EnumTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="5a54e69a-9ba0-cd96-c61d-3514894545fc">
+      <Execution id="fb90eac8-8dcb-4636-897e-0b1462333144" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EnumTest" />
+    </UnitTest>
+    <UnitTest name="Bool_Format_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="3551e7e6-f93a-eae3-9f6f-e55bd921a3f0">
+      <Execution id="0f0b3d71-2ac9-4be8-b5c0-85ed45e720e1" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Bool_Format_Test" />
+    </UnitTest>
+    <UnitTest name="Multiple_Formats_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="24ad7c42-6090-b7fe-b179-7ff8791b7322">
+      <Execution id="640e10c2-80e1-410e-8f69-62499f7e6c5a" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Multiple_Formats_Test" />
+    </UnitTest>
+    <UnitTest name="BasicTypeTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="e6530888-e618-b9c9-4cfa-d3bd3e76c0bb">
+      <Execution id="9b828200-3ff0-413a-aac0-056411a61938" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicTypeTest" />
+    </UnitTest>
+    <UnitTest name="Object_ToString_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="b015a07f-6982-da75-2139-cf924326afff">
+      <Execution id="897ce87c-8e46-4d70-bfd0-6e75415b8f45" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Object_ToString_Test" />
+    </UnitTest>
+    <UnitTest name="Enum_And_Bool_Format_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="77c31b7e-360e-0c91-e586-03d116a8db6f">
+      <Execution id="86e0b4a8-0f0f-4b9f-9300-713c04bb6dda" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Enum_And_Bool_Format_Test" />
+    </UnitTest>
+    <UnitTest name="NestedClassesTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="0ef8bd4d-a23c-bd1e-9de9-88f8e88829dd">
+      <Execution id="59aa5518-e1b6-4b3c-91ce-58a750a4e821" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NestedClassesTest" />
+    </UnitTest>
+    <UnitTest name="ComplexList_Format_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="5f86b717-6b8a-cbfb-c35f-5d39a81e9131">
+      <Execution id="a27562b5-4ee3-458b-8d87-cd0e9d5d15d0" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ComplexList_Format_Test" />
+    </UnitTest>
+    <UnitTest name="BoolTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="843f87da-ab17-0751-27c2-c9b7d8cb9c48">
+      <Execution id="e2f90341-c6dc-48c2-8198-6072112e62f2" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BoolTest" />
+    </UnitTest>
+    <UnitTest name="Multiple_Formats2_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="7b930fb9-6611-ab49-35cb-8bcbde79cdef">
+      <Execution id="1e873233-68ae-4025-b134-4a9c115cd274" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Multiple_Formats2_Test" />
+    </UnitTest>
+    <UnitTest name="Primitive_As_Root_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="7050211c-c76c-513e-c05c-4a358ec8b4ae">
+      <Execution id="10e79205-fbf7-4f4c-9bd7-f9075b6551fe" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Primitive_As_Root_Test" />
+    </UnitTest>
+    <UnitTest name="BasicPropertiesTest" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="6578d986-bc10-da0d-01b9-d32e4ee4aa03">
+      <Execution id="a5c26d87-1a94-41c9-a2ef-02351828002b" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.StandardMappingTest, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BasicPropertiesTest" />
+    </UnitTest>
+    <UnitTest name="DateTime_Formatting_Test" storage="c:\users\steven\documents\visual studio 2010\projects\net-to-pdf\net2pdftests\bin\debug\net2pdftests.dll" id="20d1606d-b7ac-7e22-75e8-7de25a1f6d7b">
+      <Execution id="a345203e-5838-4dd9-8965-318e367e3475" />
+      <TestMethod codeBase="C:/Users/Steven/Documents/Visual Studio 2010/Projects/Net-to-PDF/Net2PdfTests/bin/Debug/Net2PdfTests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Net2PdfTests.FormatterTests, Net2PdfTests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DateTime_Formatting_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="6578d986-bc10-da0d-01b9-d32e4ee4aa03" executionId="a5c26d87-1a94-41c9-a2ef-02351828002b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf94dae5-5c34-f8c0-9390-ddd198d415b6" executionId="5b715c97-9d38-466b-afb7-485dd03da4e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ef8bd4d-a23c-bd1e-9de9-88f8e88829dd" executionId="59aa5518-e1b6-4b3c-91ce-58a750a4e821" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5a54e69a-9ba0-cd96-c61d-3514894545fc" executionId="fb90eac8-8dcb-4636-897e-0b1462333144" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="843f87da-ab17-0751-27c2-c9b7d8cb9c48" executionId="e2f90341-c6dc-48c2-8198-6072112e62f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a9a4c5c-773c-e915-6c52-09dab4a5d77d" executionId="f46e585c-ab4c-46f0-b1c6-c0c533b196a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6530888-e618-b9c9-4cfa-d3bd3e76c0bb" executionId="9b828200-3ff0-413a-aac0-056411a61938" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20d1606d-b7ac-7e22-75e8-7de25a1f6d7b" executionId="a345203e-5838-4dd9-8965-318e367e3475" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7050211c-c76c-513e-c05c-4a358ec8b4ae" executionId="10e79205-fbf7-4f4c-9bd7-f9075b6551fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46d86b0f-f82b-3c1b-686e-88cbaca5be11" executionId="e97b0fb6-3a8d-4b80-a458-a4aea4ecf708" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24ad7c42-6090-b7fe-b179-7ff8791b7322" executionId="640e10c2-80e1-410e-8f69-62499f7e6c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b930fb9-6611-ab49-35cb-8bcbde79cdef" executionId="1e873233-68ae-4025-b134-4a9c115cd274" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc8cefbd-b5af-253c-59ea-56c0237fb2e4" executionId="3c02563e-0ae6-4cd0-aa54-3e561ea77004" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="77c31b7e-360e-0c91-e586-03d116a8db6f" executionId="86e0b4a8-0f0f-4b9f-9300-713c04bb6dda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3551e7e6-f93a-eae3-9f6f-e55bd921a3f0" executionId="0f0b3d71-2ac9-4be8-b5c0-85ed45e720e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f86b717-6b8a-cbfb-c35f-5d39a81e9131" executionId="a27562b5-4ee3-458b-8d87-cd0e9d5d15d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b015a07f-6982-da75-2139-cf924326afff" executionId="897ce87c-8e46-4d70-bfd0-6e75415b8f45" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a5c26d87-1a94-41c9-a2ef-02351828002b" testId="6578d986-bc10-da0d-01b9-d32e4ee4aa03" testName="BasicPropertiesTest" computerName="STEVEN-PC" duration="00:00:00.0735178" startTime="2011-08-28T10:49:12.9863652-04:00" endTime="2011-08-28T10:49:13.6259663-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5c26d87-1a94-41c9-a2ef-02351828002b">
+    </UnitTestResult>
+    <UnitTestResult executionId="5b715c97-9d38-466b-afb7-485dd03da4e1" testId="bf94dae5-5c34-f8c0-9390-ddd198d415b6" testName="DateTimeTest" computerName="STEVEN-PC" duration="00:00:00.0003754" startTime="2011-08-28T10:49:13.6259663-04:00" endTime="2011-08-28T10:49:13.6415663-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5b715c97-9d38-466b-afb7-485dd03da4e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="59aa5518-e1b6-4b3c-91ce-58a750a4e821" testId="0ef8bd4d-a23c-bd1e-9de9-88f8e88829dd" testName="NestedClassesTest" computerName="STEVEN-PC" duration="00:00:00.0004280" startTime="2011-08-28T10:49:13.6415663-04:00" endTime="2011-08-28T10:49:13.6415663-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="59aa5518-e1b6-4b3c-91ce-58a750a4e821">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb90eac8-8dcb-4636-897e-0b1462333144" testId="5a54e69a-9ba0-cd96-c61d-3514894545fc" testName="EnumTest" computerName="STEVEN-PC" duration="00:00:00.0003977" startTime="2011-08-28T10:49:13.6571664-04:00" endTime="2011-08-28T10:49:13.6571664-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb90eac8-8dcb-4636-897e-0b1462333144">
+    </UnitTestResult>
+    <UnitTestResult executionId="e2f90341-c6dc-48c2-8198-6072112e62f2" testId="843f87da-ab17-0751-27c2-c9b7d8cb9c48" testName="BoolTest" computerName="STEVEN-PC" duration="00:00:00.0003097" startTime="2011-08-28T10:49:13.6571664-04:00" endTime="2011-08-28T10:49:13.6727664-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2f90341-c6dc-48c2-8198-6072112e62f2">
+    </UnitTestResult>
+    <UnitTestResult executionId="f46e585c-ab4c-46f0-b1c6-c0c533b196a5" testId="6a9a4c5c-773c-e915-6c52-09dab4a5d77d" testName="ComplexListTest" computerName="STEVEN-PC" duration="00:00:00.0002999" startTime="2011-08-28T10:49:13.6727664-04:00" endTime="2011-08-28T10:49:13.6727664-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f46e585c-ab4c-46f0-b1c6-c0c533b196a5">
+    </UnitTestResult>
+    <UnitTestResult executionId="9b828200-3ff0-413a-aac0-056411a61938" testId="e6530888-e618-b9c9-4cfa-d3bd3e76c0bb" testName="BasicTypeTest" computerName="STEVEN-PC" duration="00:01:11.0581248" startTime="2011-08-28T10:49:13.6883664-04:00" endTime="2011-08-28T10:50:24.7464912-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b828200-3ff0-413a-aac0-056411a61938">
+    </UnitTestResult>
+    <UnitTestResult executionId="a345203e-5838-4dd9-8965-318e367e3475" testId="20d1606d-b7ac-7e22-75e8-7de25a1f6d7b" testName="DateTime_Formatting_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a345203e-5838-4dd9-8965-318e367e3475">
+    </UnitTestResult>
+    <UnitTestResult executionId="10e79205-fbf7-4f4c-9bd7-f9075b6551fe" testId="7050211c-c76c-513e-c05c-4a358ec8b4ae" testName="Primitive_As_Root_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="10e79205-fbf7-4f4c-9bd7-f9075b6551fe">
+    </UnitTestResult>
+    <UnitTestResult executionId="e97b0fb6-3a8d-4b80-a458-a4aea4ecf708" testId="46d86b0f-f82b-3c1b-686e-88cbaca5be11" testName="Primitive_As_Root2_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e97b0fb6-3a8d-4b80-a458-a4aea4ecf708">
+    </UnitTestResult>
+    <UnitTestResult executionId="640e10c2-80e1-410e-8f69-62499f7e6c5a" testId="24ad7c42-6090-b7fe-b179-7ff8791b7322" testName="Multiple_Formats_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="640e10c2-80e1-410e-8f69-62499f7e6c5a">
+    </UnitTestResult>
+    <UnitTestResult executionId="1e873233-68ae-4025-b134-4a9c115cd274" testId="7b930fb9-6611-ab49-35cb-8bcbde79cdef" testName="Multiple_Formats2_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e873233-68ae-4025-b134-4a9c115cd274">
+    </UnitTestResult>
+    <UnitTestResult executionId="3c02563e-0ae6-4cd0-aa54-3e561ea77004" testId="fc8cefbd-b5af-253c-59ea-56c0237fb2e4" testName="Enum_Format_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c02563e-0ae6-4cd0-aa54-3e561ea77004">
+    </UnitTestResult>
+    <UnitTestResult executionId="86e0b4a8-0f0f-4b9f-9300-713c04bb6dda" testId="77c31b7e-360e-0c91-e586-03d116a8db6f" testName="Enum_And_Bool_Format_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86e0b4a8-0f0f-4b9f-9300-713c04bb6dda">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f0b3d71-2ac9-4be8-b5c0-85ed45e720e1" testId="3551e7e6-f93a-eae3-9f6f-e55bd921a3f0" testName="Bool_Format_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f0b3d71-2ac9-4be8-b5c0-85ed45e720e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="a27562b5-4ee3-458b-8d87-cd0e9d5d15d0" testId="5f86b717-6b8a-cbfb-c35f-5d39a81e9131" testName="ComplexList_Format_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a27562b5-4ee3-458b-8d87-cd0e9d5d15d0">
+    </UnitTestResult>
+    <UnitTestResult executionId="897ce87c-8e46-4d70-bfd0-6e75415b8f45" testId="b015a07f-6982-da75-2139-cf924326afff" testName="Object_ToString_Test" computerName="STEVEN-PC" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="897ce87c-8e46-4d70-bfd0-6e75415b8f45">
+    </UnitTestResult>
+  </Results>
+</TestRun>

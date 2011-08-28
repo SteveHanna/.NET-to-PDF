@@ -30,13 +30,14 @@ namespace Net2Pdf
             var objType = obj.GetType();
 
             //Base Case
-            if (objType.Namespace.StartsWith("System"))
-            {
-                string propertyName = namePrefix.Remove(namePrefix.Length - 1, 1);//remove the "." - myList[0].
+            string propertyName = namePrefix;
+            if (namePrefix.EndsWith("."))
+                propertyName = namePrefix.Remove(namePrefix.Length - 1, 1);
 
-                string v = _formatters.ExecuteFormatters(obj, propertyName, obj);
-                mappings.Add(propertyName, v);
-            }
+            string vFormat = _formatters.ExecuteFormatters(obj, propertyName, obj);
+
+            if (objType.Namespace.StartsWith("System") || vFormat !=null)
+                mappings.Add(propertyName, vFormat);
             else
             {
                 foreach (var property in objType.GetProperties())
@@ -69,17 +70,17 @@ namespace Net2Pdf
 
                                 if (containsEnum && !mappings.ContainsKey(namePrefix + propName))
                                 {
-                                    string v = _formatters.ExecuteFormatters(obj, propName, e);
+                                    string v = _formatters.ExecuteFormatters(obj, propName, e) ?? e.ToString();
                                     mappings.Add(namePrefix + propName, v);
                                 }
 
-                                string f = _formatters.ExecuteFormatters(obj, propName, containsEnum);
+                                string f = _formatters.ExecuteFormatters(obj, propName, containsEnum) ?? containsEnum.ToString();
                                 mappings.Add(namePrefix + propName + "." + e.ToString(), f);
                             }
                         }
                         else
                         {
-                            string v = _formatters.ExecuteFormatters(obj, propName, propValue);
+                            string v = _formatters.ExecuteFormatters(obj, propName, propValue) ?? propValue.ToString();
                             mappings.Add(namePrefix + propName, v);
                         }
                     }

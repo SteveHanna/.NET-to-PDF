@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExpressionFormatter.cs" />
+    <Compile Include="ExpressionParser.cs" />
     <Compile Include="IStringFormatter.cs" />
     <Compile Include="PdfPrinter.cs" />
     <Compile Include="PropertyMapper.cs" />

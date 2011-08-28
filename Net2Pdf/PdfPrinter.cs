@@ -20,7 +20,7 @@ namespace Net2Pdf
 
             foreach (var item in e)
                 _formatters.Add(new ExpressionFormatter<T>(item));
-
+        
             return this;
         }
 

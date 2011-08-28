@@ -20,10 +20,10 @@ namespace Net2PdfTests
         {
             TestObj x1 = InitializeMocks();
             var x = new StringFormatterCollection();
-            x.Add(new ExpressionFormatter<TestObj>(o => o.MyInt + " set from unit test"));
+            x.Add(new ExpressionFormatter<TestObj>(o => "my lucky number is " + o.MyInt + " set from unit test"));
 
             var propertyNameAndValues = new PropertyMapper(x).GetMappings(x1);
-            Assert.AreEqual("10 set from unit test", propertyNameAndValues["MyInt"]);
+            Assert.AreEqual("my lucky number is 10 set from unit test", propertyNameAndValues["MyInt"]);
         }
 
         [TestMethod]
@@ -135,6 +135,20 @@ namespace Net2PdfTests
             var propertyNameAndValues = new PropertyMapper(x).GetMappings(x1);
 
             Assert.AreEqual("LIST STRING 1", propertyNameAndValues["MyComplexList[0].SubString"]);
+        }
+        
+        [TestMethod]
+        public void Object_ToString_Test()
+        {
+            TestObj x1 = InitializeMocks();
+            var x = new StringFormatterCollection();
+            x.Add(new ExpressionFormatter<InnerObj>(o => o.ToString()));
+            x.Add(new ExpressionFormatter<TestObj>(o => "I'm an Int " + (1 + o.MyInt)));
+            
+            var propertyNameAndValues = new PropertyMapper(x).GetMappings(x1);
+
+            Assert.AreEqual("I'm the ToString of InnerObj99", propertyNameAndValues["Sub.Inner"]);
+            Assert.AreEqual("I'm an Int 11", propertyNameAndValues["MyInt"]);
         }
     }
 }

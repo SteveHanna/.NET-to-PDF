@@ -44,6 +44,11 @@ namespace Net2PdfTests
     public class InnerObj
     {
         public int InnerInt { get; set; }
+
+        public override string ToString()
+        {
+            return "I'm the ToString of InnerObj" + InnerInt;
+        }
     }
 
     public enum TestEnum

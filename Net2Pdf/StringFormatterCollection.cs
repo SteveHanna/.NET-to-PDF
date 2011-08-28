@@ -3,10 +3,10 @@ using System.Collections.Generic;
 
 namespace Net2Pdf
 {
-    public class StringFormatterCollection :  IEnumerable<IStringFormatter>
+    internal class StringFormatterCollection : IEnumerable<IStringFormatter>
     {
         private List<IStringFormatter> _formatters = new List<IStringFormatter>();
-       
+
         public void Add(IStringFormatter formatter)
         {
             _formatters.Add(formatter);
@@ -23,8 +23,8 @@ namespace Net2Pdf
                     return propValueString;
             }
 
-            if (propValueString == null)
-                propValueString = propValue.ToString();
+            //if (propValueString == null)
+            //    propValueString = propValue.ToString();
 
             return propValueString;
         }
