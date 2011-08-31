@@ -8,8 +8,6 @@ namespace Net2Pdf
 {
     internal class ExpressionFormatter<T> : IStringFormatter
     {
-        public Expression<Func<T, string>>[] Expressions { get; set; }
-
         private Expression<Func<T, string>>[] expressions;
 
         public ExpressionFormatter(params Expression<Func<T, string>>[] e)

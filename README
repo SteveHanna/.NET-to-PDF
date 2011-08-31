@@ -1,0 +1,8 @@
+
+What
+- This project makes it easy for developers to map object properties to PDF form fields.
+
+How
+- When an object is passed to the PdfPrinter class, it iterates through the properties of the object and by convention, uses the property names as the field names in the pdf form.
+- Uses reflection to get property name and value
+- Uses ITextSharp to fill out the pdf form
