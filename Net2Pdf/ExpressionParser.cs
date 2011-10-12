@@ -8,38 +8,34 @@ namespace Net2Pdf
 {
     internal static class ExpressionParser
     {
-        public static string GetPropertyName(Expression e)
+        public static string FindPropertyNameInExpression(Expression e)
         {
-            if (e is LambdaExpression)
-                return GetPropertyName(((LambdaExpression)e).Body);
+            if (e.NodeType == ExpressionType.Lambda)
+                return FindPropertyNameInExpression(((LambdaExpression)e).Body);
             else if (e is BinaryExpression)
             {
                 var be = (BinaryExpression)e;
 
-                string left = GetPropertyName(be.Left);
+                string left = FindPropertyNameInExpression(be.Left);
                 if (left != null)
                     return left;
-                var right = GetPropertyName(be.Right);
+                var right = FindPropertyNameInExpression(be.Right);
                 if (right != null)
                     return right;
 
                 return null;
             }
             else if (e is UnaryExpression)
-            {
-                return GetPropertyName((e as UnaryExpression).Operand);
-            }
+                return FindPropertyNameInExpression((e as UnaryExpression).Operand);
             else if (e is MemberExpression)
-            {
                 return (e as MemberExpression).Member.Name;
-            }
             else if (e is MethodCallExpression)
             {
-                var x = (e as MethodCallExpression);
+                var x = (MethodCallExpression)e;
                 if (x.Object is MemberExpression)
-                    return GetPropertyName(x.Object);
+                    return FindPropertyNameInExpression(x.Object);
                 else
-                    return null; //this means no property was passed in
+                    return null; //this means no property was part of the method
             }
             else if (e is ConstantExpression)
                 return null;

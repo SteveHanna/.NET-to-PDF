@@ -11,33 +11,26 @@ namespace Net2Pdf
     public class PdfPrinter
     {
         private StringFormatterCollection _formatters = new StringFormatterCollection();
-        private bool _hasAdded = false;
 
-        public PdfPrinter AddCustomFormat<T>(params Expression<Func<T, string>>[] e)
+        public PdfPrinter PerformCustomFormatting<T>(params Expression<Func<T, string>>[] e)
         {
-            if (_hasAdded)
-                throw new InvalidOperationException("Items have already been added, to add more items please use the \"ThenAdd\" method");
-
             foreach (var item in e)
                 _formatters.Add(new ExpressionFormatter<T>(item));
         
             return this;
         }
 
-        public PdfPrinter ThenAdd<T>(params Expression<Func<T, string>>[] e)
+        public PdfPrinter ThenPerform<T>(params Expression<Func<T, string>>[] e)
         {
-            foreach (var item in e)
-                _formatters.Add(new ExpressionFormatter<T>(item));
-
-            return this;
+            return PerformCustomFormatting<T>(e);
         }
 
-        public void PrintToPdf(Stream inputFileName, Stream outStream, object objToMap)
+        public void PrintToPdf(Stream inpStream, Stream outStream, object objToMap)
         {
-            if (inputFileName == null || outStream == null || objToMap == null)
+            if (inpStream == null || outStream == null || objToMap == null)
                 throw new ArgumentNullException();
 
-            PdfReader reader = new PdfReader(inputFileName);
+            PdfReader reader = new PdfReader(inpStream);
 
             using (PdfStamper stamper = new PdfStamper(reader, outStream))
             {
@@ -49,7 +42,6 @@ namespace Net2Pdf
                     fields.SetField(item.Key, item.Value);
 
                 stamper.FormFlattening = true;
-
                 stamper.Close();
             }
 

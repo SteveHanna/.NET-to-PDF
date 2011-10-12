@@ -21,7 +21,7 @@ namespace Net2Pdf
             {
                 if (obj.GetType() == typeof(T))
                 {
-                    var propName = ExpressionParser.GetPropertyName((Expression)expression);
+                    var propName = ExpressionParser.FindPropertyNameInExpression((Expression)expression);
                     if (propertyName == propName || propName == null)
                         return expression.Compile()((T)obj);
                 }

@@ -92,13 +92,13 @@ namespace Net2PdfTests
             Assert.AreEqual("True", propertyNameAndValue["MyBool"]);
         }
 
-        //[TestMethod]
-        //public void ListTest()
-        //{
-        //    TestObj x1 = InitializeMocks();
-        //    var propertyNameAndValue = GetMappings(x1);
-        //    Assert.AreEqual("a", propertyNameAndValue["MyList[1]"]);
-        //}
+        [TestMethod]
+        public void ListTest()
+        {
+            TestObj x1 = InitializeMocks();
+            var propertyNameAndValue = GetMappings(x1);
+            Assert.AreEqual("a", propertyNameAndValue["MyList[1]"]);
+        }
 
         [TestMethod]
         public void ComplexListTest()
@@ -107,6 +107,16 @@ namespace Net2PdfTests
             var propertyNameAndValue = GetMappings(x1);
 
             Assert.AreEqual("List String 1", propertyNameAndValue["MyComplexList[0].SubString"]);
+        }
+
+        [TestMethod]
+        public void TestAnonymousType()
+        {
+            object obj = new { NumberOne = 1, AString = "I'm a string" };
+            var propertyNameAndValues = GetMappings(obj);
+
+            Assert.AreEqual("1", propertyNameAndValues["NumberOne"]);
+            Assert.AreEqual("I'm a string", propertyNameAndValues["AString"]);
         }
     }
 }

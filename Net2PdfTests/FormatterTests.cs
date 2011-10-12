@@ -150,5 +150,17 @@ namespace Net2PdfTests
             Assert.AreEqual("I'm the ToString of InnerObj99", propertyNameAndValues["Sub.Inner"]);
             Assert.AreEqual("I'm an Int 11", propertyNameAndValues["MyInt"]);
         }
+
+        [TestMethod]
+        public void Deep_Property_ToString_Test()
+        {
+            TestObj x1 = InitializeMocks();
+            var x = new StringFormatterCollection();
+            x.Add(new ExpressionFormatter<TestObj>(o => o.Sub.Inner.InnerInt.ToString() + "LOLZ"));
+
+            var propertyNameAndValues = new PropertyMapper(x).GetMappings(x1);
+
+            Assert.AreEqual("99LOLZ", propertyNameAndValues["Sub.Inner.InnerInt"]);
+        }
     }
 }
